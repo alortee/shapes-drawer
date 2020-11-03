@@ -1,0 +1,34 @@
+body {
+    @apply text-sm text-gray-lightest antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+.tool-btn {
+    @apply h-8 w-8 flex justify-center items-center rounded cursor-pointer;
+}
+.tool-btn:hover {
+    @apply bg-gray-darkest;
+}
+.tool-btn--active, .tool-btn--active:hover {
+    @apply bg-blue;
+}
+
+label {
+    @apply text-xs uppercase block mb-2;
+}
+
+.input {
+    @apply appearance-none outline-none bg-gray px-4 py-3 w-full border-b-2 border-gray-light;
+}
+
+.input:focus, .input:active {
+    @apply border-blue;
+}
